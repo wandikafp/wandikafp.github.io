@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300");
+html{
+  position: relative;
+  height: 100%;
+}
+body{
+  height: 100%;
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Dancing Script', Helvetica, Arial, sans-serif;
+}
+
+p{
+  font-family: "Comfortaa", sans-serif;
+}
+.navbar {
+  height: 70px;
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  color: #f0f0e6;
+  z-index: 100;
+  margin-bottom: 0;
+  border-radius: 0;
+  transition: background-color 1s ease 0s; 
+}
+
+.navbar-brand {
+  display: none;
+  margin-top: 10px;
+  color: #f0f0e6;
+  font-weight: 400; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #f0f0e6;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: lowercase;
+  margin: 10px 5px 5px 5px;
+  border-radius: 5px; 
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: #f0f0e6;
+  border: 1px solid #f0f0e6; 
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: #f0f0e6;
+  text-decoration: none; 
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #f0f0e6; 
+}
+.navbar-default .navbar-toggle {
+  border-color: #f0f0e6; 
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #07374a; 
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #f0f0e6;
+  background-color: #f0f0e6; 
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: #07374a;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #46D695;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); 
+}
+  .navbar.solid .navbar-brand {
+    display: inline-block;
+    color: #f0f0e6;
+    transition: color 1s ease 0s; 
+  }
+  .navbar.solid .navbar-nav > li > a {
+    color: #f0f0e6;
+    transition: color 1s ease 0s; 
+  }
+
+.cover{
+  padding: 10% 0 10% 0;
+}
+.page-one{
+  background-image: url("img/x.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-one .content{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.page-one h1{
+  font-size: 300%;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #071515;
+}
+.page-one p{
+  border-top: 3px solid;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.page-one ul{
+  padding: 0;
+  list-style-type: none;
+}
+.page-one ul li{
+  display: inline;
+}
+.page-one ul li a{
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+.page-one ul li a:hover{
+  opacity: 0.5;
+}
+#pointDown{
+  padding: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+#photo-profile{
+  width: 200px;
+  border-radius: 100%;
+  border: 3px solid #313131;
+  margin-bottom: 20px;
+}
+.page-two{
+  background-color: #46D695;
+}
+.page-two h3{
+  font-size: 50px;
+  color: #153C3E;
+}
+.page-two p{
+  font-size: 1.2em;
+  color: #fff;
+}
+.list{
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px 2px;
+  color: #313131;
+  font-weight: 600;
+  border: solid 2px #313131;
+  border-radius: 10%;
+}
+.page-three{
+  background-color: #43C5CB;
+}
+.page-three h3{
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.page-three img{
+  width: 300px;
+}
+
+.page-three p{
+  padding: 5px;
+}
+.page-three .description{
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  color: white;
+  font-size: 20px;
+  top: 20px;
+  z-index: 1;
+}
+.page-three .project-view{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border: 5px solid #46D695;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.project-item{
+  cursor: pointer;
+  border-radius: 20px;
+}
+.project-item:hover .description{
+  display: block;
+}
+.project-item:hover .project-view{
+  opacity: 0.6;
+  transition: opacity .3s;
+}
+
+.page-four{
+  background-color: #46D695;
+}
+.page-four h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.page-four h3{
+  margin-bottom: 20px;
+}
+footer{
+  background-color: #39373a;
+  padding-top: 10px;
+}
+footer h5{
+  color: white;
+  font-family: Cantarell;
+}
+footer ul{
+  padding: 0;
+  list-style-type: none;
+}
+footer ul li{
+  display: inline;
+}
+footer ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+footer ul li a:hover{
+  opacity: 0.5;
+}
